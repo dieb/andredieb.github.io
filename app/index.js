@@ -1,7 +1,2 @@
-let x = "Hello world"
-
-class Test {
-  hello() {
-    console.log("hello world")
-  }
-}
+let x = 0
+let y = 2
