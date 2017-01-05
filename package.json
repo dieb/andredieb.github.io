@@ -1,8 +1,26 @@
 {
   "name": "dieb.github.io",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "app/index.js",
   "repository": "git@github.com:dieb/dieb.github.io.git",
   "author": "= <andre.dieb@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "build-minimized": "webpack --optimize-minimize --optimize-dedup",
+    "build-development-live": "webpack-dev-server --content-base"
+  }
 }
