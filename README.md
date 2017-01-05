@@ -1,16 +1,36 @@
 # andredieb.com
 
+## Installation
+
+Install the development dependencies:
+
+```bash
+$ yarn
+```
+
 ## Development
 
-All source code lives under [src](src/). This is a [yarn](https://yarnpkg.com)
+All source code lives under [app](app/). This is a [yarn](https://yarnpkg.com)
 project that builds the website into docs.
 
-For local development I use `python -m SimpleHTTPServer 8000` and point
-my browser to [localhost:8000/docs](http://localhost:8000/docs).
+Build automatically on changes:
+
+```bash
+$ yarn run build-development-live
+```
+
+Website is live on [localhost:8080/webpack-dev-server](http://localhost:8000/webpack-dev-server) and will auto-refresh upon changes.
 
 
 ## Deployment
 
-Git push to master :). This repo is configured for deploying `docs/` and using
-a custom domain. If you clone it, remember to also change the [CNAME](CNAME) file.
+Stop the automatic local build and then execute
+
+```bash
+$ yarn run build-minimized
+```
+
+Commit the changes to `docs/` and git push to master :). This repo is
+configured for deploying `docs/` and using a custom domain. If you clone it,
+remember to also change the [CNAME](CNAME) file.
 
