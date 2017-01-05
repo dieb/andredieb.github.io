@@ -6,10 +6,13 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const Copy = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './app/index.js',
+  entry: {
+    app: ['./app/index.js']
+  },
   output: {
     path: path.join(__dirname, 'docs'),
-    filename: "app.js",
+    publicPath: "/",
+    filename: "bundle.js",
   },
 
   module: {
@@ -23,8 +26,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract("css!sass")
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract("style-loader", "css!sass")
       }
     ]
   },

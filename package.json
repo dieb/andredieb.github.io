@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build-minimized": "webpack --optimize-minimize --optimize-dedup",
-    "build-development-live": "webpack-dev-server --content-base docs",
+    "build-development-live": "webpack-dev-server -w --content-base docs",
     "test": "webpack"
   }
 }

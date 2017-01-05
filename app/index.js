@@ -1,2 +1,5 @@
-let x = 0
-let y = 2
+require('./style/index.scss')
+
+let x = 5
+let y = 9
+let z = 8
