@@ -1,5 +1,8 @@
 # andredieb.com
 
+[![Build Status](https://travis-ci.org/dieb/website.svg?branch=master)](https://travis-ci.org/dieb/website)
+
+
 ## Installation
 
 Install the development dependencies:
