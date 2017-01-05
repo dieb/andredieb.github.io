@@ -1,0 +1,8 @@
+{
+  "name": "dieb.github.io",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:dieb/dieb.github.io.git",
+  "author": "= <andre.dieb@gmail.com>",
+  "license": "MIT"
+}
